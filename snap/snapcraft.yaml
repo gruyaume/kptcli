@@ -1,0 +1,26 @@
+name: kptcli
+base: core22
+version: 'v1.0.0-beta.39'
+summary: Automate Kubernetes Configuration Editing
+license: Apache-2.0
+description: |
+  kpt is a package-centric toolchain that enables a WYSIWYG configuration authoring, automation, 
+  and delivery experience, which simplifies managing Kubernetes platforms and KRM-driven 
+  infrastructure (e.g., Config Connector, Crossplane) at scale by manipulating declarative 
+  Configuration as Data.
+
+grade: devel
+confinement: devmode
+
+apps:
+  kpt:
+    command: bin/kpt
+
+parts:
+  kpt:
+    plugin: go
+    build-snaps:
+      - go/1.20/stable
+    source: https://github.com/GoogleContainerTools/kpt.git
+    source-type: git
+    source-tag: v1.0.0-beta.39

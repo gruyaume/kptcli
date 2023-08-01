@@ -6,6 +6,7 @@ license: Apache-2.0
 contact: guillaume.belanger@canonical.com
 issues: https://github.com/gruyaume/kptcli/issues
 source-code: https://github.com/gruyaume/kptcli
+website: https://kpt.dev/
 description: |
   kpt is a package-centric toolchain that enables a WYSIWYG configuration authoring, automation, 
   and delivery experience, which simplifies managing Kubernetes platforms and KRM-driven 
